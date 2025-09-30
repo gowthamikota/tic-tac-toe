@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Deluxe</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="game-wrapper">
+        <header>
+            <h1>TIC-TAC-TOE</h1>
+            <h2 id="result">Let's Begin</h2>
+        </header>
+
+        <div class="scoreboard">
+            <div class="score-item">
+                <div class="score-label">Player X</div>
+                <div class="score-value" id="scoreX">0</div>
+            </div>
+            <div class="score-item">
+                <div class="score-label">Player O</div>
+                <div class="score-value" id="scoreO">0</div>
+            </div>
+            <div class="score-item">
+                <div class="score-label">Draws</div>
+                <div class="score-value" id="scoreDraw">0</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <button class="cell" id="0"></button>
+            <button class="cell" id="1"></button>
+            <button class="cell" id="2"></button>
+            <button class="cell" id="3"></button>
+            <button class="cell" id="4"></button>
+            <button class="cell" id="5"></button>
+            <button class="cell" id="6"></button>
+            <button class="cell" id="7"></button>
+            <button class="cell" id="8"></button>
+        </div>
+
+        <div class="controls">
+            <button class="btn new-round-btn" onclick="newRound()">New Round</button>
+            <button class="btn reset-all-btn" onclick="resetAll()">Reset All</button>
+        </div>
+    </div>
+ <script src="script.js"></script>
+</body>
+</html>
